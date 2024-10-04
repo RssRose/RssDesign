@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.comentar img{
+    width: 40px;
+    border-radius: 100px;
+
+}
+ 
+.comentar{
+    display: flex;
+    align-items: center;
+}
+.comentar input{
+    font-size: 15px;
+    border: none;
+    padding: 10px;
+    border-radius: 100px;
+    width: 900px;
+}
+.medio2 hr{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.aa{
+    width: 30px;
+    filter: invert(30%);
+   
+}
+.colorAzul{
+    color: #007bff;
+}
+.ñ:hover{
+    cursor: pointer;
+}
+
+.imagenAzul{
+    filter: brightness(0) saturate(100%) invert(65%) sepia(100%) saturate(500%) hue-rotate(190deg); /* Negro a azul */
+
+}
+.negro{
+    background-color: black;
+}
+
+.like{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 110px;
+}
+.inte{
+    display: flex;
+    justify-content: space-around;
+}
+.des{
+    font-size: large;
+    color: rgb(96, 98, 99);
+    margin-top: 10px;
+    margin-left: 7px;
+}
+.foton{
+    margin-top: 8px;
+    width: 750px;
+}
+
+.medio2 .nombre{
+    margin-left: 10px;
+    align-items: center;
+}
+.medio2 .personaje img{
+    width: 50px;
+    border-radius: 100px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.personaje{
+    display: flex;
+}
+.medio2 {
+    background-color: aliceblue;
+    width: 800px;
+    align-items: center;
+    height: 87.4vh;
+    border: solid rgb(38, 170, 159);
+    box-shadow: -2px 5px 33px 0px rgba(255,255,255,0.75);
+-webkit-box-shadow: -2px 5px 33px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: -2px 5px 33px 0px rgba(255,255,255,0.75);
+overflow: auto;
+padding: 20px;
+}
+section{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.izquierda img{
+    height: 688px;
+    width: 600px;
+
+    
+  
+}
+
+ 
+@keyframes lol {
+    0%{
+        box-shadow: 0px 1px 22px 0px rgba(255,255,255,0.75);
+-webkit-box-shadow: 0px 1px 22px 0px rgba(255,255,255,0.75);
+-moz-box-shadow: 0px 1px 22px 0px rgba(255,255,255,0.75);
+    }
+}
+.izquierda{
+  
+    animation: lol 1.8s  infinite linear alternate ;
+
+   
+}
+@keyframes lel {
+    0%{
+   transform: rotate(360deg);
+    }
+    
+}
+.izquierda{
+    padding: 8px;
+    position: relative;
+    overflow: hidden;
+    
+    height: 700px;
+    
+    margin-right: 40px;
+    width: 600px;
+    border-radius: 1000px;
+}
+.glo{
+    background-image: url(/img/photo-1478760329108-5c3ed9d495a0.jpg);
+    border-radius: 1000px;
+}
+.foto{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.je{
+    box-shadow: -1px 1px 37px 0px rgba(0,0,0,0.37);
+    -webkit-box-shadow: -1px 1px 37px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: -1px 1px 37px 0px rgba(0,0,0,0.37);
+overflow: hidden;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff2c;
+    width: 100%;
+}
+.medio{
+   
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logos input{
+    height: 40px;
+    padding: 10px;
+    width: 40vh;
+    border-radius: 100px;
+    border: none;
+    font-size: 15px;
+}
+nav .logos img{
+    width: 100px;
+}
+.medio img{
+    width: 40px;
+    filter: invert(100%);
+}
+nav .logos{
+    display: flex;
+    align-items: center;
+    
+}
+body{
+   background-image: url(/img/photo-1478760329108-5c3ed9d495a0.jpg);
+    background-size: cover;
+background-repeat: no-repeat;
+background-position: top;
+min-height: 100vh;
+}

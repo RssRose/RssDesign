@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+header .arriba h1 {
+    color: white;
+}
+header img{
+    width: 85px;
+    
+}
+header .imagen{
+    position: relative;
+    animation: a 4s infinite both linear;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+body{
+    background-image: url(/img/2edf9f79c34072103993dcaddf8f49f8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+    filter: grayscale(7%) sepia(1%) brightness(81%) saturate(159%) contrast(138%) invert(10%);
+-webkit-filter: grayscale(7%) sepia(1%) brightness(81%) saturate(159%) contrast(138%) invert(10%);
+-moz-filter: grayscale(7%) sepia(1%) brightness(81%) saturate(159%) contrast(138%) invert(10%);
+}
+.head1{
+    margin-left: 20px;
+}
+header .imagen{
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+    padding: 3px;
+    
+    position: relative;
+    overflow: hidden;
+    
+
+}
+header .imagen::before{
+    width: 20px;
+    height: 90px;
+    background: linear-gradient(90deg, rgb(120, 243, 116), rgba(128, 209, 125, 0.5)); /* Degradado más suave */
+    content: "";
+    position: absolute;
+    top: 51%; /* Ajusta según sea necesario */
+    left: 40%; /* Ajusta según sea necesario */
+    animation: a 2s  reverse infinite both linear;
+    transform-origin: top;
+    z-index: -1;
+}
+@keyframes a {
+    0%{
+        transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+    }
+    100%{
+
+    }
+}
+@keyframes Ross{
+    0%{
+        transform: rotateY(-120deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+@keyframes colores {
+    0%{
+        color: rgb(159, 236, 140);
+    }
+    50%{
+        color: rgb(2, 83, 9);
+    }
+    100%{
+
+    }
+}
+.cambiar4{
+animation: a 1s infinite;
+}
+.q11{
+    animation: colores 1s;
+}
+.q22{
+    animation: colores 1.4s;
+}
+.q33{
+    animation: colores 1.8s;
+}
+
+.q44{
+    animation: colores 2.2s;
+}
+.q55{
+    animation: colores 2.6s;
+}
+.q66{
+    animation: colores 3s;
+}
+
+
+.ere {
+            animation: Ross 1s alternate , colores 1s;
+            animation-delay:  0s ,9s;
+        }
+        .ere2 {
+            animation: Ross 1s alternate , colores 1s;
+            animation-delay:  1s ,9.1s;
+        }
+        .ere3 {
+            animation: Ross 1s alternate , colores 1s;
+            animation-delay:  2s ,9.2s;
+        }
+        .ere4 {
+            animation: Ross 1s alternate , colores 1s;
+            animation-delay:  3s ,9.3s;
+        }
+        .ere5 {
+            animation: Ross 1s alternate , colores 1s;
+            animation-delay:  4s ,9.4s;
+        }
+        .ere6 {
+            animation: Ross 1s alternate , colores 1s;
+            animation-delay:  5s ,9.5s;
+        }
+        .ere7 {
+            animation: Ross 1s alternate , colores 1s;
+            animation-delay:  6s ,9.6s;
+        }
+        .ere8 {
+            animation: Ross 1s alternate , colores 1s;
+            animation-delay:  7s ,9.7s;
+        }
+        .ere9 {
+            animation: Ross 1s alternate , colores 1s;
+            animation-delay:  8s ,9.8s;
+        }
+
+    header .arriba h1{
+            display: flex;
+        }
+        header .abajo {
+            display: flex;
+            margin-top: 6px;
+            width: 520px;
+            justify-content: space-between;
+        }
+        .z{
+        display: inline-block;
+        color:rgb(38, 173, 4); ;
+        }
+        header .head2{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            width: 300px;
+            margin-right: 20vh;
+        
+        }
+        header .head2 img{
+            width: 40px;
+            filter: invert(100%);
+
+        }
+        .ge{
+            display: flex;
+            align-items: center;
+            
+            margin-left: 20vh;
+        }
+        .aña{
+            position: absolute;
+            opacity: 0.1;
+            height: 90vh;
+        }
+        .cambiar{
+            position: relative;
+        }
+        .cambiar:hover{
+            cursor: pointer;
+        }
+        .cambiar:hover::before{
+            
+            width: 61px;
+            height: 3px;
+           
+            content: "";
+            margin-top: 18px;
+            position: absolute;
+            animation: agrandar 2s both ;
+        }
+        @keyframes agrandar {
+            0%{
+                width: 0px;
+                background-color: rgb(29, 104, 6);
+            }
+            20%{
+                background-color: rgb(29, 104, 6);
+            }
+            40%{
+                background-color: rgb(29, 104, 6);
+            }
+            60%{
+                background-color: rgb(29, 104, 6);
+            }
+            80%{
+                background-color: rgb(62, 122, 43);
+            }
+            100%{
+                width: 61px;
+                background-color: white;
+            }
+        }
+    </style>
+        <video class="aña" autoplay loop muted id="miVideo"> 
+            <source src="/img/humo.mp4" type="video/mp4">
+            
+        </video>
+<header>
+    <div class="ge"> 
+<div class="imagen"> <img src="/img/333x332.png" alt=""></div> 
+<div class="head1">
+<div class="arriba">
+    <h1><p style="color: rgb(38, 173, 4);"><p class="ere z">R</p><p class="ere2 z">s</p><p class="ere3 z">s</p><p class="ere4 z">D</p><p class="ere5 z">e</p><p class="ere6 z">s</p><p class="ere7 z">i</p><p class="ere8 z">g</p><p class="ere9 z">n</p> - </p>Ali Pinedo</h1>
+</div>
+<div class="abajo">
+<h4 class="cambiar"><span class="q1">S</span><span class="q2">o</span><span class="q3">c</span><span class="q4">i</span><span class="q5">a</span><span class="q6">l</span></h4>
+<h4 style="border-right: solid; padding-right: 10px; margin-left: 5px;">Profesores </h4>
+<h4 style="border-right: solid; padding-right: 10px; margin-left: 5px;">Carreras</h4>
+<h4 style="margin-left: 5px; border-right: solid; padding-right: 10px;">Autor</h4>
+</div>
+
+</div> </div>
+<div class="head2">
+    <img src="/img/instagram (1).png" alt="">
+    <img src="/img/facebook (2).png" alt="">
+    <img src="/img/whatsapp (1).png" alt="">
+    <img src="/img/tik-tok (1).png" alt="">
+</div>
+
+</header>
+
+<div class="persona">
+
+    <div class="letras">
+        <h1>
+        Un mundo mas <br> Sociable
+        <br>es un mundo mas Unido </h1>
+    </div>
+    <img src="/img/retrato-joven-estudiante-globo-dia-educacion-Photoroom.png" alt="">
+
+</div>
+
+
+<style>
+    @keyframes persona{
+        0%{
+            transform: translate(0px,-22px);
+        }
+    }
+.persona img{
+    width: 640px;
+    height: 820px;
+    animation: persona 2.2s infinite alternate linear;
+}
+
+.persona .letras{
+    z-index: 1000;
+}
+.persona .letras{
+     display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 50px;
+    text-shadow: 4px 4px 14px rgba(243,243,243,0.6);
+}
+.persona{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    z-index: 100;
+}
+ 
+
+.abajo .cambiar{
+    border-right: solid; padding-right: 10px;
+    z-index: 1000;
+}
+ 
+
+</style>
+</body>
+</html>
+<script>
+    // Obtener el elemento de video
+    var video = document.getElementById("miVideo");
+
+    // Cambiar la velocidad de reproducción a 2x (el doble de rápido)
+    video.playbackRate = 3.0; // Puedes ajustar el valor a la velocidad deseada
+ 
+    const cambiar = document.querySelector(".cambiar")
+    const q1 = document.querySelector(".q1")
+    const q2 = document.querySelector(".q2")
+    const q3 = document.querySelector(".q3")
+    const q4 = document.querySelector(".q4")
+    const q5 = document.querySelector(".q5")
+    const q6 = document.querySelector(".q6")
+
+    cambiar.addEventListener('mouseover', function(){
+
+        cambiar.classList.add('col')
+        q1.classList.add('q11')
+        q2.classList.add('q22')
+        q3.classList.add('q33')
+        q4.classList.add('q44')
+        q5.classList.add('q55')
+        q6.classList.add('q66')
+    })
+
+    cambiar.addEventListener('mouseout', function(){
+
+cambiar.classList.remove('col')
+q1.classList.remove('q11')
+q2.classList.remove('q22')
+q3.classList.remove('q33')
+q4.classList.remove('q44')
+q5.classList.remove('q55')
+q6.classList.remove('q66')
+})
+
+</script>

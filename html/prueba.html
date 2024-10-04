@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="comentarios-container">
+        <div class="comentario-box">
+            <textarea id="inputComentario" placeholder="Escribe un comentario..."></textarea>
+            <button id="publicarComentario">Publicar</button>
+        </div>
+        <ul id="listaComentarios"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.comentarios-container {
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comentario-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    font-size: 16px;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    
+</style>
+
+<script>
+ 
+
+
+
+const publicarComentarioBtn = document.getElementById('publicarComentario');
+const inputComentario = document.getElementById('inputComentario');
+const listaComentarios = document.getElementById('listaComentarios');
+
+// Función para agregar un comentario
+function agregarComentario() {
+    const textoComentario = inputComentario.value;
+
+    if (textoComentario === '') {
+        alert('Escribe un comentario primero.');
+        return;
+    }
+
+    // Crear un nuevo elemento de lista (li)
+    const nuevoComentario = document.createElement('li');
+    nuevoComentario.textContent = textoComentario;
+
+    // Añadir el comentario a la lista
+    listaComentarios.appendChild(nuevoComentario);
+
+    // Limpiar el campo de comentario
+    inputComentario.value = '';
+}
+
+// Agregar el comentario al presionar el botón
+publicarComentarioBtn.addEventListener('click', agregarComentario);
+
+// También se puede agregar el comentario al presionar 'Enter'
+inputComentario.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+        e.preventDefault(); // Evita el salto de línea
+        agregarComentario();
+    }
+});
+
+</script>
